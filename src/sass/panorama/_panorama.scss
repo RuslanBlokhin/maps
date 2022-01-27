@@ -1,0 +1,66 @@
+.panorama {
+  position: fixed;
+  width: 100%;
+  min-width: 290px;
+  height: 50vh;
+  right: 0;
+  top: 0;
+  background-color: $white;
+  transition: $transition;
+  z-index: 3;
+
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+.panorama.is-open {
+  opacity: 1;
+  overflow-y: auto;
+  overflow-x: hidden;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+.modal__panorama {
+  position: relative;
+  width: 100%;
+  padding: 16px;
+}
+
+.picture_panorama {
+  position: relative;
+  width: 284px;
+  border-radius: 4px;
+  height: 120px;
+  filter: brightness(50%);
+  transition: $transition;
+  &:hover {
+    transform: scale(1.03);
+  }
+}
+
+.picture__text {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.picture__logo {
+  margin-right: 10px;
+  fill: black;
+  transition: $transition;
+}
+
+.wrapper_button {
+  text-align: -webkit-center;
+}
+
+.button__panorama {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6px 20px;
+  border-radius: 4px;
+  background-color: #f3f3f3;
+  transition: $transition;
+}

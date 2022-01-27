@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./sass/styles.scss" />
+    <title>GoogleMaps</title>
+  </head>
+  <body>
+    <include src="./partials/modal.html"></include>
+
+    <div id="map"></div>
+    <script src="./components/googleMaps.js" type="module"></script>
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAavjIZHjsQjnPcMY1QiDgUs5xJZC2-m0U"
+      async
+    ></script>
+
+    <script src="./components/select.js" type="module"></script>
+  </body>
+</html>

@@ -1,0 +1,225 @@
+.modal {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  width: 320px;
+  min-width: 290px;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  background-color: $white;
+  transition: $transition;
+  z-index: 2;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+.modal.is-open {
+  opacity: 1;
+  overflow-y: auto;
+  overflow-x: hidden;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+.modal::-webkit-scrollbar {
+  width: 4px;
+  border-radius: 4px;
+  background: transparent;
+}
+
+.modal::-webkit-scrollbar-thumb {
+  background-color: $grey;
+  width: 4px;
+  border-radius: 4px;
+  height: 15px;
+}
+
+.std {
+  padding: $padding;
+  margin-bottom: $margin-bottom;
+  border-bottom: $border-bottom;
+  padding-bottom: $padding-bottom;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  border-bottom: 1px solid rgb(243, 243, 243);
+}
+
+.button {
+  border: none;
+  background-color: transparent;
+  padding: 0;
+  cursor: pointer;
+}
+
+.logo_hover {
+  fill: grey;
+  transition: $transition;
+  &:hover {
+    fill: black;
+  }
+}
+
+.picture {
+  display: block;
+  width: 100%;
+  height: 230px;
+}
+
+.audio {
+  margin-bottom: 10px;
+  background-color: rgb(243, 243, 243);
+}
+
+.audio_controls {
+  width: 100%;
+  background-color: rgb(243, 243, 243);
+  &::-webkit-media-controls-panel {
+    background-color: rgb(243, 243, 243);
+  }
+  &::-webkit-media-controls-play-button {
+    display: none;
+  }
+}
+
+.title {
+  font-size: 26px;
+  width: $width;
+  padding-bottom: 0;
+  border-bottom: none;
+  margin-bottom: 0;
+}
+
+.title_wrapper {
+  height: 90px;
+}
+
+.alt {
+  width: 100%;
+  font-size: 14px;
+  color: $grey;
+  border-bottom: none;
+  margin-bottom: 0;
+}
+
+.description {
+  font-size: 15px;
+}
+
+.address {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.address__logo {
+  margin-right: 20px;
+}
+
+.titlemin {
+  margin-bottom: 15px;
+}
+
+.contacts {
+  width: 100%;
+  display: flex;
+  justify-content: start;
+  padding: $padding;
+  padding-bottom: $padding-bottom;
+}
+
+.contacts__text {
+  margin-left: 20px;
+}
+
+.site {
+  cursor: pointer;
+  color: rgb(75, 75, 255);
+  transition: $transition;
+  &:hover {
+    color: orangered;
+  }
+}
+
+.button__play {
+  position: absolute;
+  top: 190px;
+  width: 320px;
+  height: 230px;
+  z-index: 1;
+  background-color: transparent;
+  border: none;
+  transition: $transition;
+  cursor: pointer;
+  &:hover {
+    background-color: rgba(0, 0, 0, 0.349);
+  }
+
+  &:hover .button__play_logo {
+    fill: white;
+  }
+}
+
+.button__play_close.is-close {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.button__play_logo {
+  width: 100px;
+  height: 100px;
+  fill: rgba(255, 255, 255, 0.671);
+  transition: $transition;
+}
+
+.button__buy {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  &.is-open {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+  }
+  &.delete {
+    display: none;
+  }
+}
+
+.button__pause {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  &.is-open {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+  }
+}
+
+.button__buy_logo {
+  width: 54px;
+}
+
+.button__buy__text {
+  font-family: 'Roboto', sans-serif;
+  font-size: 22px;
+  font-weight: 700;
+  background-color: rgb(228, 228, 228);
+  border-radius: 8px;
+  padding: 8px 14px;
+  transition: $transition;
+}
+
+.ymaps-2-1-79-islets_round-button.ymaps-2-1-79-islets__icon_only
+  .ymaps-2-1-79-islets_round-button__icon {
+  margin-top: 5px;
+}
+
+.ymaps-2-1-79-islets_button-icon {
+  width: 23px;
+}

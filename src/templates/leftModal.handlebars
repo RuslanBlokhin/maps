@@ -1,0 +1,53 @@
+<div class='title_wrapper'>
+  <h2 class='title std'>{{language.name}}</h2>
+  <p class='alt std'>{{language.alt}}</p>
+</div>
+<div class='glide'>
+  <div class='glide__track' data-glide-el='track'>
+    <ul class='glide__slides'>
+      {{#each image}}
+        <li class='glide__slide'>
+          <img src='{{this}}' alt='{{language.alt}}' class='picture' />
+        </li>
+      {{/each}}
+    </ul>
+  </div>
+  <div class='glide__bullets' data-glide-el='controls[nav]'>
+    <button class='glide__bullet' data-glide-dir='=0'></button>
+    <button class='glide__bullet' data-glide-dir='=1'></button>
+    <button class='glide__bullet' data-glide-dir='=2'></button>
+  </div>
+</div>
+<div class='audio'>
+  <audio controls controlsList='nodownload' oncontextmenu='return false' class='audio_controls'>
+    <source src='{{language.audio}}' />
+  </audio>
+</div>
+<div class='description std'>{{language.description}}</div>
+<div class='address std'>
+  <div class='address__logo'>
+    <svg width='24' height='24' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'><path
+        d='M3 11a9 9 0 0 0 5.018 8.073c1.945 1.01 3.115 2.067 3.512 3.168a.5.5 0 0 0 .94 0c.397-1.101 1.567-2.157 3.512-3.168A9 9 0 1 0 3 11zm9 3a3 3 0 1 0 0-6 3 3 0 0 0 0 6z'
+        fill='lightgray'
+      ></path>
+    </svg>
+  </div>
+  <div class='address__text'>
+    <h4 class='titlemin'>{{language.titleAddress}}</h4>
+    <p>{{language.address}}</p>
+  </div>
+</div>
+<div class='contacts'>
+  <div class='contacts__logo'>
+    <svg width='24' height='24' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'><path
+        d='M20.186 19.742c1.15-1.15.883-2.424.404-2.707-.336-.198-4.749-2.684-4.749-2.684-.344-.216-.686-.106-.893.142l-.005-.004-1.626 1.625a.674.674 0 0 1-.824.1 14.052 14.052 0 0 1-2.632-2.075 14.054 14.054 0 0 1-2.074-2.632.674.674 0 0 1 .1-.824L9.51 9.057l-.004-.005c.243-.203.361-.544.143-.893 0 0-2.487-4.413-2.685-4.75-.283-.478-1.556-.745-2.707.405-2.566 2.568-1.081 8.207 3.32 12.608 4.398 4.399 10.04 5.887 12.608 3.32z'
+        fill='lightgrey'
+      ></path>
+    </svg>
+  </div>
+  <div class='contacts__text'>
+    <h4 class='titlemin'>{{language.titleContacts}}</h4>
+    <p>{{phone}}</p>
+    <a class='site'>{{site}}</a>
+  </div>
+</div>

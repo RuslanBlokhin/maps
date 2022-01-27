@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./sass/styles.scss" />
+    <title>YandexMaps</title>
+  </head>
+  <body>
+    <include src="./partials/modal.html"></include>
+
+    <div id="panorama" class="panorama"></div>
+    <div id="yandexMaps"></div>
+    <script src="./components/yandexMaps.js" type="module"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=de0263d7-5e0b-4fe8-a720-75bc909c314e&lang=ru_RU"></script>
+
+    <script src="./components/buttons.js" type="module"></script>
+    <script src="./components/select.js" type="module"></script>
+  </body>
+</html>
